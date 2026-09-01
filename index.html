@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+
+    <!-- SEO & Metadata -->
+    <title>Apoo Restaurant | Lüks Yemek ve Gastronomi Deneyimi</title>
+    <meta
+      name="description"
+      content="Apoo Restaurant: Usta şeflerimizden premium Tomahawk biftek, taze makarnalar ve lüks lezzetler. Hemen menümüzü keşfedin ve yerinizi ayırtın."
+    />
+    <meta
+      name="keywords"
+      content="Apoo restaurant, lüks yemek, steakhouse, Tomahawk biftek, gurme lezzetler, fine dining"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://apoo-restaurant.com/" />
+
+    <!-- Social Media (Open Graph & Twitter Cards for SEO) -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:title" content="Apoo Restaurant | Lüks Yemek Deneyimi" />
+    <meta
+      property="og:description"
+      content="Her lokmada eşsiz lezzetler. Özel menümüzü ve şef imzalı yemeklerimizi keşfedin."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200"
+    />
+    <meta property="og:url" content="https://apoo-restaurant.com/" />
+
+    <!-- GEO / Structured Data (Schema.org JSON-LD for AI Search Engines) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Apoo Restaurant",
+        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600",
+        "servesCuisine": ["Fine Dining", "Steakhouse", "International"],
+        "priceRange": "$$$",
+        "telephone": "+90-212-000-0000",
+        "url": "https://apoo-restaurant.com",
+        "hasMenu": "https://apoo-restaurant.com/#menu",
+        "description": "Lüks atmosferde usta şefler tarafından hazırlanan özel steak ve gurme yemek deneyimi."
+      }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Harici CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navigasyon -->
+    <header>
+      <a href="#" class="logo">Apoo<span>.</span></a>
+
+      <!-- Hamburger Menu Button (Mobile) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav id="navMenu">
+        <ul>
+          <li><a href="#home">Ana Sayfa</a></li>
+          <li><a href="#menu">Menü</a></li>
+          <li><a href="#about">Hakkımızda</a></li>
+        </ul>
+        <a href="#menu" class="btn-reserve mobile-btn">Menüyü Keşfet ↗</a>
+      </nav>
+
+      <a href="#menu" class="btn-reserve desktop-btn">Menüyü Keşfet ↗</a>
+    </header>
+
+    <!-- Mobile Navigation Overlay Background -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Bölümü (الكتابة فوق والصورة تحت بالنص) -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1 class="hero-title">Her Lokmada <span>Lezzeti Hissedin</span></h1>
+        <p class="hero-subtitle">
+          Apoo'nun usta şefleri tarafından tutkuyla, taze malzemelerle ve
+          unutulmaz tatlarla hazırlanan lüks yemek deneyimi.
+        </p>
+        <a href="#menu" class="btn-reserve btn-hero">Menümüzü İnceleyin ↗</a>
+      </div>
+      <div class="hero-image-container">
+        <img
+          src="./data/pexels-polina-tankilevitch-3872376.jpg"
+          onerror="
+            this.onerror = null;
+            this.src =
+              'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop';
+          "
+          alt="Apoo Özel Yemeği"
+          class="hero-img-main"
+        />
+      </div>
+    </section>
+
+    <!-- Menü Bölümü -->
+    <section class="menu-section" id="menu">
+      <div class="section-title">
+        <h2>Özel Yemek Menümüz</h2>
+        <p>Özenle hazırlanan şef imzalı lezzetlerimizi tadın</p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Yemek 1 -->
+        <article class="menu-card">
+          <img
+            src="Gentl and Hyers (@gentlandhyers) photograph the….jpg"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop';
+            "
+            alt="Premium Tomahawk Biftek"
+            loading="lazy"
+          />
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="dish-name">Premium Tomahawk Biftek</h3>
+              <span class="dish-price">$85</span>
+            </div>
+            <p class="dish-desc">
+              Kömür ateşinde pişirilmiş dana eti, marine edilmiş yumurta sarısı
+              ve özel yeşil sos ile.
+            </p>
+          </div>
+        </article>
+
+        <!-- Yemek 2 -->
+        <article class="menu-card">
+          <img
+            src="87190d01ae5c9dc42cc43e88036bb712.jpg"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&auto=format&fit=crop';
+            "
+            alt="Baklalı Kızarmış Tavuk"
+            loading="lazy"
+          />
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="dish-name">Baklalı Kızarmış Tavuk</h3>
+              <span class="dish-price">$42</span>
+            </div>
+            <p class="dish-desc">
+              Otlar ve limon sosuyla marine edilmiş kızarmış tavuk parçaları,
+              taze iç bakla ile.
+            </p>
+          </div>
+        </article>
+
+        <!-- Yemek 3 -->
+        <article class="menu-card">
+          <img
+            src="bc0496fe32eede940629b52471a7ae58.jpg"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://images.unsplash.com/photo-1541529086526-db283c563270?w=600&auto=format&fit=crop';
+            "
+            alt="Havyarlı Altın Kroket"
+            loading="lazy"
+          />
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="dish-name">Havyarlı Altın Kroket</h3>
+              <span class="dish-price">$35</span>
+            </div>
+            <p class="dish-desc">
+              Özel peynir dolgulu çıtır toplar, havyar ve acılı mayonez
+              dokunuşuyla.
+            </p>
+          </div>
+        </article>
+
+        <!-- Yemek 4 (نفس طبق المعكرونة الخاص بك) -->
+        <article class="menu-card">
+          <img
+            src="./data/pembe makarna _lezzeti hissetmek.jpg"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://images.unsplash.com/photo-1621996346565-e3d5d6281288?w=600&auto=format&fit=crop';
+            "
+            alt="Pembe Soslu Makarna"
+            loading="lazy"
+          />
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="dish-name">Pembe Soslu Fettuccine</h3>
+              <span class="dish-price">$38</span>
+            </div>
+            <p class="dish-desc">
+              Kremalı domates sosu, rendelenmiş peynir ve güneşte kurutulmuş
+              domatesli taze makarna.
+            </p>
+          </div>
+        </article>
+
+        <!-- Yemek 5 -->
+        <article class="menu-card">
+          <img
+            src="Runderentrecote I kruidenboter.jpg"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&auto=format&fit=crop';
+            "
+            alt="Otlu Tereyağlı Antrikot"
+            loading="lazy"
+          />
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="dish-name">Otlu Tereyağlı Antrikot</h3>
+              <span class="dish-price">$65</span>
+            </div>
+            <p class="dish-desc">
+              Mevsim sebzeleri ve özel baharatlı tereyağı ile sunulan kaliteli
+              antrikot dilimi.
+            </p>
+          </div>
+        </article>
+
+        <!-- Yemek 6 -->
+        <article class="menu-card">
+          <img
+            src="Crispy Southwest Chicken Tenders 🍗🔥 _ Food Photography.jpg"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://images.unsplash.com/photo-1562967914-608f82629710?w=600&auto=format&fit=crop';
+            "
+            alt="Çıtır Tavuk Fleto"
+            loading="lazy"
+          />
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="dish-name">Çıtır Tavuk Fleto (Tenders)</h3>
+              <span class="dish-price">$28</span>
+            </div>
+            <p class="dish-desc">
+              Southwest usulü ekstra çıtır tavuk parçaları, taze yeşil salata ve
+              ranch sos ile.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+      <p>© 2026 Apoo Restaurant. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- JavaScript Dosyası -->
+    <script src="script.js"></script>
+  </body>
+</html>
